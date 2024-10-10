@@ -1,0 +1,417 @@
+/* Going for a purple/blue dark themed retro vibe website */
+/* General styling */
+body {
+  font-family: "Rajdhani", sans-serif;
+  color: #fff;
+  background-color: #08070a; /* for dark themed background that will be a sligtly lighter shade of black */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #000000; /*complete black header to match the same dark theme background-color of the body */
+  padding: 1.25em; 
+  text-align: center;
+}
+
+/* Header styling */
+.header {
+  font-size: 1.15em; /* I will be using em for all fonts size to help with compatability for different devices*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  box-shadow: #a081d7;
+}
+
+.logo {
+  text-align: left;
+}
+
+
+.title {
+  margin: 0;
+  font-size: 2.8em;
+  color: white; 
+}
+
+
+.tagline {
+  margin: 0;
+  font-size: 1.65em;
+  color: #a081d7;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 13%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.94em;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #40d2fe;
+}
+
+/* Info section */
+.info {
+  text-align: center;
+  width: 60%;
+  padding-left: 18%;
+  font-size: 1.88em;
+}
+
+.sale {
+  color: #40d2fe;
+  margin-top: 0;
+}
+
+.halloweenSales {
+  color: #a081d7;
+  font-size: 2.4em;
+
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.subheading {
+  font-size: 2.4em;
+  color: #a081d7;
+}
+
+
+/* Adding glowing effects for expiry date, borders around cards, and line (divider) */
+.expire {
+  font-size: larger;
+  font-weight: bold;
+  color: #40d2fe;
+  text-align: center;
+  background-color: #000000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px #a081d7;
+
+}
+.expire:hover {
+  color: #40fef4;
+  box-shadow: 0 0 15px #40d2fe;
+  transition: all 0.3s ease-in-out;
+}
+
+hr {
+  border: none;
+  height: 4px; /* Thicker hr */
+  background: linear-gradient(to right, #40d2fe, #9b5de5, #40d2fe);  /* Purple-themed gradient */
+  border-radius: 5px; /* Rounded edges */
+  width: 80%; /* Adjust width as needed */
+  box-shadow: 0 2px 10px rgba(155, 93, 229, 0.5); /* Purple shadow for added depth */
+  margin: 20px auto; /* Centered with margin space */
+}
+
+/* Button styling */
+button {
+  padding: 0.625em 1.25em;
+  background-color: #40d2fe;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #4cfff6;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #a081d7;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Buy now button */
+.buy-now {
+  background-color: #40d2fe;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 0.31em 0.63em;
+  cursor: pointer;
+  margin-left: 0.63em;
+  font-size: 0.88em;
+}
+
+.buy-now:hover {
+  background-color: #4cfff6;
+}
+
+/* Cards section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.94em;
+  padding: 1.25em;
+}
+
+.card {
+  padding: 0.94em;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  font-size: 1.56em;
+}
+
+.card img {
+  width: 60%;
+  border-radius: 10px;
+  margin-bottom: 0.94em;
+}
+
+.card p {
+  font-size: 0.827em;
+  margin-bottom: 0.94em;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #a081d7;
+}
+
+/* Upcoming card styling */
+.cardupcoming {
+  display: inline-block;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  padding: 1.25em;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.cardupcoming h1 {
+  font-size: 1.88em;
+  margin: 0;
+}
+
+.cardupcoming img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.94em;
+}
+
+.cardupcoming:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 0 50px #a081d7;
+
+}
+/* Platform Logos */
+.platform-logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.platform-logos img {
+  width: 30px;
+  height: auto;
+}
+
+/* ANIMATION FOR PHOTOS ON HOMEPAGE */
+.photo-gallery-container {
+  width: 50%;/* Half-width container */
+  overflow: hidden; /* Hide overflow to create a sliding effect */
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.photogallery-animation {
+  display: flex;
+  width: max-content; /* Allows the container to fit content without wrapping */
+  animation: slide 300s linear infinite;/* Continuous sliding */
+}
+
+.photogallery-animation img {
+  width: 200px;/* Sets each images width */
+  height: auto; /* Maintains aspect ratio */
+  margin-right: 20px;/* Space between images */
+}
+
+/* CONTACT FORM */
+
+form {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid#a081d7;
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.title,
+.tagline {
+  animation: slideIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+
+/* Responsive design */
+
+/* Large devices */
+@media (min-width: 1024px) {
+
+  header,
+  footer {
+    padding: 2.5em;
+  }
+
+  nav ul li {
+    margin: 0 1.25em;
+  }
+
+  button {
+    padding: 0.94em 1.88em;
+  }
+}
+
+/* Medium devices */
+@media (max-width: 1023px) and (min-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.63em 0;
+  }
+
+  section {
+    padding: 1.88em;
+  }
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+  nav ul {
+    display: block;
+    text-align: left;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.63em 0;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 1.25em;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+  }
+}
+
+/* Animations For ALL Sections*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Title and tagline animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ /* ANIMATION FOR PHOTOS ON HOMEPAGE */
+@keyframes moveController {
+  0% {
+    transform: translateX(0); 
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+    /* Start from the initial position (left) */
+  }
+
+  100% {
+    transform: translateX(50%);
+    /* Move half of the total width to the right */
+  }
+}
+
