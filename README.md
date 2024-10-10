@@ -31,3 +31,5 @@ Welcome to Discount Digital Games (DDG)! This is a retro-vibe gaming discount sh
 
 - **Animations**:  
   Smooth transitions and scrolling image galleries keep the site dynamic and visually engaging.
+
+ [Click Here](https://brendandindialsece.github.io/Assignment2/) to view the Discount Digital Games (DDG) Store!
